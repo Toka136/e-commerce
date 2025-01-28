@@ -1,0 +1,138 @@
+
+.w-100
+{
+    width: 80% !important;
+    height:60vh !important;
+    object-fit: contain;
+    object-position: 185px;
+}
+.slider-list
+{
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 22% 66%;
+    margin-bottom: 30px;
+
+}
+.carousel-indicators 
+{
+    margin-left: 0 !important;
+}
+.carousel-indicators button
+{
+    width: 15px !important;
+    height: 15px !important;
+    border-radius: 50%;
+    margin-left: 5px !important;
+    background-color: #808080 !important;
+    border: 3px solid transparent !important;
+}
+.carousel-indicators .active
+{
+    background-color: #db4444 !important;
+    border: 3px solid white !important;
+}
+.img-text
+{
+    position: relative;
+    width: 100%;
+    background-color: black;
+    /* text-align: end; */
+}
+.img-text .text-photo
+{
+    position: absolute;
+    color: white;
+    top: 40px;
+    left: 20px;
+   
+}
+.img-text .text-photo .logo_name
+{
+    display: flex;
+    /* justify-content: space-between; */
+   /* align-items: center; */
+   width: 60%;
+}
+.img-text .text-photo .logo_name i
+{
+    font-size: 25px;
+    margin-right: 10px;
+}
+.img-text .text-photo h1
+{
+    color: white;
+    font-size: 35px;
+    width: 53%;
+    line-height: 48px;
+}
+.img-text a
+{
+    text-decoration: none;
+    margin-top: 100px;
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
+    width: 35%;
+    color: white;
+    font-size: 20px;
+}
+.img-text a span
+{
+    padding-bottom: 10px;
+    border-bottom: 1px solid white;
+}
+.img-text a i
+{
+    margin-top: 8px;
+}
+.startofwish
+{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin-left: 5%;
+    margin-bottom: 30px;
+}
+@media(max-width:1023px)
+{
+    .w-100
+    {
+        object-position: 120px;
+        height: 63vh !important;
+    }
+    .slider-list
+    {
+        grid-template-columns: 25% 73%;
+    }
+    .img-text a
+    {
+        margin-top: 50px;
+    }
+}
+@media(max-width:767px)
+{
+    .slider-list
+    {
+        grid-template-columns: 100%;
+       
+        position: relative;
+    }
+}
+@media(max-width:424px)
+{
+    .img-text .text-photo h1
+    {
+        font-size: 18px;
+        line-height: 38px;
+    }
+    .img-text a
+    {
+        margin-top: 20px;
+        width: 70%;
+    }
+    .img-text .text-photo .logo_name
+    {
+        width: 80% !important;
+    }
+}

@@ -1,0 +1,185 @@
+.check
+{
+    display: grid;
+    grid-template-columns: 50% 40%;
+    justify-content: space-between;
+    width: 90%;
+    margin-left: 5%;
+}
+.check form input
+{
+    background-color: #f5f5f5 !important;
+    
+}
+.checkprods
+{
+    margin-top: 84px;
+}
+.check form label
+{
+    margin-top: 20px !important;
+    color: #cccccc;
+}
+.check form label span
+{
+    color: red;
+}
+.check .form-check label
+{
+    margin-top: 0 !important;
+    margin-left: 15px;
+}
+.check .form-check
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.check .form-check-input[type=checkbox]
+{
+    cursor: pointer;
+    background-color: #f5f5f5 !important;
+    border: none !important;
+    color: black !important;
+}
+.check .form-check-input[type=checkbox]:checked
+{
+     background-color: #db4444 !important;
+    outline: none !important;
+}
+.check .form-check-input[type=checkbox]:focus
+{
+   
+    box-shadow: none !important;
+    border: none !important;
+}
+.checkprod,
+.subtotal,
+.total,
+.cupon
+.pay .form-check  label
+{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    /* align-items: center; */
+    margin-bottom: 10px;
+    text-transform: capitalize;
+}
+.subtotal
+{
+    margin-top: 15px;
+    padding-bottom: 2px;
+    border-bottom: 1px solid black;
+}
+.pay .form-check
+{
+    justify-content: start !important;
+    align-items: center !important;
+}
+.pay .form-check p
+{
+    margin-top: auto !important;
+    margin-bottom: 0 !important;
+}
+.pay .form-check img
+{
+    width: 120px;
+}
+.pay .form-check-input
+{
+    width: 19px !important;
+    height: 19px !important;
+    border-color: black !important;
+    position: relative;
+    /* background-clip: content-box; */
+    /* appearance:bevel !important; */
+}
+.pay .form-check-input::before
+{
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: black;
+    left: 4px;
+    top: 3px;
+    display: none;
+}
+.pay .form-check-input:focus,
+.pay .form-check-input:active
+{
+    box-shadow: none;
+}
+.pay .form-check-input:checked
+{
+    background-color: white !important;
+    color: black !important;
+    box-shadow: none !important;
+
+}
+.pay .form-check-input:checked::before
+{
+    display: block;
+}
+.cupon
+{
+    margin-top: 30px;
+}
+.cupon button
+{
+    margin-left: 10px;
+}
+.cupon input
+{
+    outline: none;
+    padding: 10px ;
+    border-radius: 5px;
+    border-color: black !important;
+}
+.checkoutprods
+{
+    margin-top: 80px;
+}
+.placeorder
+{
+    margin-top: 20px;
+}
+@media(max-width:1043px)
+{
+    .check
+    {
+        grid-template-columns: 80%;
+        justify-content: center;
+    }
+}
+@media(max-width:767px)
+{
+    .check
+    {
+        grid-template-columns: 90%;
+       width: 100%;
+       margin-left: 0;
+    }
+    .placeorder button
+    {
+        width: 80%;
+        padding: 15px 30px;
+        margin-left: 10%;
+    }
+}
+@media(max-width:424px)
+{
+    .check
+    {
+        grid-template-columns: 98%;
+       width: 100%;
+       margin-left: 0;
+    }
+    .cupon button
+    {
+        margin-top: 20px;
+    }
+}

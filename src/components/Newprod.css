@@ -1,0 +1,110 @@
+.newarriveprod
+{
+    position: relative;
+    border-radius: 10px;
+    padding: 10px ;
+    background-color: black;
+    /* width: 100%; */
+    height: 50%;
+    
+}
+.newarriveprod h2,
+.newarriveprod p
+{
+    color: white;
+    margin-top: 10px;
+}
+
+.newarriveprod h2
+{
+    font-size: 20px;
+}
+.newarriveprod p{
+font-size: 14px;
+    width: 100%;
+     margin-bottom: 0;
+}
+.newarriveprod a
+{
+    color: white;
+   
+}
+.newarriveprod img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: right;
+}
+.newarriveprod .txtonimg
+{
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+    color: white;
+    /* margin-left: 10px; */
+}
+.newarrive
+{
+    display: grid;
+    width: 90%;
+    margin-left: 5%;
+    grid-template-columns: 48% 48%;
+    justify-content: space-between;
+    height: 93vh;
+    position: relative;
+}
+.newarrive > div
+{
+    height: 93vh;
+
+}
+.rightarrive > div:nth-child(1) p,
+.newarrive> div:nth-child(1) p
+{
+    width: 65%;
+}
+.rightarrivedown
+{
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 49% 49%;
+    justify-content: space-between;
+    height: 50%;
+    
+}
+.rightarrivedown > div
+{
+    height: 100%;
+}
+@media(max-width:767px)
+{
+    .newarrive > div
+    {
+        height: fit-content;
+    }
+    .newarrive
+    {
+        height: fit-content;
+        grid-template-columns: 100%;
+        row-gap: 30px;
+        width: 95%;
+        margin-left: 2%;
+    }
+    .rightarrivedown
+    {
+        grid-template-columns: 100%;
+        row-gap: 30px;
+        margin-bottom: 40px;
+        height: 100%;
+    }
+   
+}
+@media(max-width:424px)
+{
+    
+    .newarriveprod
+    {
+        height: 70%;
+    }
+}

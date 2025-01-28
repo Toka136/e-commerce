@@ -1,0 +1,357 @@
+.img-textt
+{
+    border-radius: 5px;
+    padding: 10px;
+    position: relative;
+    background-color: #ddd;
+    height: 300px;
+}
+.img-textt img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    
+}
+.img-textt span
+{
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    background-color: #db4444;
+    text-align: center;
+    color: white;
+    /* padding: 5px; */
+    border-radius: 2px;
+}
+.img-textt  i:nth-child(3)
+{
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: white;
+    color: black;
+}
+.img-textt a
+{
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    position: absolute;
+    top: 40px;
+    right: 10px;
+    background-color: white;
+    color: black;
+    text-decoration: none;
+}
+.img-textt .add_cart
+{
+    background-color: black;
+    color: white;
+    text-transform: capitalize;
+    font-weight: 600;
+    font-size: 20px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display:none;
+    transition: .3s;
+    cursor: pointer;
+}
+.img-textt:hover .add_cart
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.product_cont .desc p:nth-child(1)
+{
+    color: black;
+    font-weight: 600;
+}
+.product_cont .desc .price
+{
+    display: flex;
+    align-items: center;
+}
+.product_cont .desc .price p:nth-child(1)
+{
+    color: #db4444;
+    margin-right: 5px;
+    /* margin-top: 5px; */
+}
+.product_cont .desc .price p:nth-child(2)
+{
+    color: #808080;
+    text-decoration: line-through;
+    /* margin-top: 5px; */
+}
+ .review
+{
+    display: flex;
+    /* margin-top: 5px; */
+    align-items: center;
+}
+ .review i
+{
+    margin-right: 5px;
+    font-size: 18px;
+    color: #bfbfbf;
+}
+ .review .full
+{
+    color: #ffb240;
+}
+.List_products
+{
+    display: grid;
+    grid-template-columns: repeat(4,20%);
+    justify-content: space-between;
+    width: 90%;
+    margin-left: 5%;
+    row-gap: 30px;
+}
+.glide__slide {
+    display: flex;
+    justify-content: center; /* Center the product horizontally */
+    align-items: center;    /* Center the product vertically */
+  }
+  .glide{
+    width: 95% !important;
+    margin-left: 5%;
+  }
+
+ .glide__arrow--left {
+    left: unset !important;
+    right: 74px !important;
+}
+.glide__arrow
+{
+    background-color: #f5f5f5 !important;
+    width: 30px !important;
+    height: 30px !important;
+    border-radius: 50% !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    top: -6% !important;
+    border: none !important;
+    outline: none !important;
+    padding: 0 !important;
+    color: black !important;
+}
+.title
+{
+    color: #db4444;
+    text-transform: capitalize;
+    position: relative;
+    margin: 30px 0 30px 80px;
+}
+.title::before
+{
+    content: "";
+    width: 15px;
+    height: 30px;
+    border-radius: 5px;
+    background-color: #db4444;
+    position: absolute;
+    left: -22px;
+    top: 5px;
+
+}
+.days-hours
+{
+    font-weight: 600;
+    text-transform: capitalize;
+   font-size: 25px;
+}
+
+.days-hours span
+{
+    display: inline-block;
+    margin-left: 30px;
+    font-weight: 600;
+    text-transform: capitalize;
+   font-size: 35px;
+   position: relative;
+}
+.days-hours span:not(.days-hours span:nth-child(1)):before
+{
+    content: ":";
+    position: absolute;
+    top: -3px;
+    left: -22px;
+    color: #db4444;
+    /* background-color: #db4444; */
+}
+.days-hours span::after
+{
+    content: 'Days';
+    position: absolute;
+    top: -28px;
+    font-size: 16px;
+    left: -1px;
+}
+.days-hours span:nth-child(1):after
+{
+    content: 'Days';
+}
+.days-hours span:nth-child(2):after
+{
+    content: 'Hours';
+}
+.days-hours span:nth-child(3):after
+{
+    content: 'Minutes';
+}
+.days-hours span:nth-child(4):after
+{
+    content: 'Seconds';
+}
+.sales
+{
+    display:  flex;
+    width: 60%;
+    justify-content: space-between;
+}
+.sales > p
+{
+    font-size: 30px;
+    font-weight: 600;
+    text-transform: capitalize;
+    margin-left: 70px;
+}
+.viewprod_cont
+{
+  text-align: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+.viewprod
+{
+    background-color: #db4444;
+    padding: 10px 15px;
+    outline: none;
+    border: 1px solid #db4444;
+    transition: .3s;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+    text-decoration: none;
+}
+.viewprod:hover
+{
+    color: #db4444;
+    background-color: white;
+}
+.img-textt .newspan
+{
+    padding:3px;
+    background-color: #1fee77;
+    color:white;
+}
+.icons_person div:nth-child(1),
+.icons_person div:nth-child(2)
+{
+    position: relative;
+}
+.icons_person div:nth-child(1) a,
+.icons_person div:nth-child(2) a
+{
+    text-decoration: none;
+    font-size: 20px;
+}
+.icons_person div:nth-child(1) span,
+.icons_person div:nth-child(2) span
+{
+    position: absolute;
+    top: -7px;
+    left: 10px;
+    color: white;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #db4444;
+    font-size: 14px;
+}
+.starrate
+{
+    position: relative;
+}
+.starrate::after
+{
+    content: "";
+    width: 50%;
+    height: 50%;
+    color: #ddd;
+    right: 0;
+}
+@media(max-width:1000px)
+{
+    .sales
+    {
+        width: 75%;
+    }
+}
+@media(max-width:767px)
+{
+    .sales
+    {
+       flex-direction: column;
+    }
+    .days-hours span
+    {
+        margin-top: 10px;
+        font-size: 25px;
+    }
+    .days-hours span::after
+    {
+        font-size: 14px;
+    }
+    .sales > p
+    {
+        margin-left: 20px;
+    }
+    .title
+    {
+        margin-left: 30px;
+    }
+    
+   
+}
+@media(max-width:424px)
+{
+    .sales
+    {
+        margin-bottom: 28px;
+    }
+    .days-hours span
+    {
+        
+        font-size: 18px;
+    }
+    .days-hours span::after
+    {
+        font-size: 12px;
+    }
+    .sales > p
+    {
+        margin-left: 16px;
+    }
+}
+   

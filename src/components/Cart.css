@@ -1,0 +1,192 @@
+.carttable
+{
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 30px;
+}
+.carttable tr
+{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 5px 5px 5px 5px #ddd;
+    padding: 10px;
+}
+.carttable th
+{
+    text-transform: capitalize;
+    width: 100%;
+    margin-left: 5px;
+    text-align: center;
+}
+.cartimg img
+{
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+}
+.cartimg
+{
+    position: relative;
+}
+.cartimg span
+{
+    position: absolute;
+    left: 90px;
+    top: 7px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: red;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+
+}
+.carttable td
+{
+    width: 100%;
+    margin-left: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.carttable input
+{
+    width: 20%;
+    /* margin-left: 30%; */
+   
+}
+.cartlinks
+{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 40px;
+
+}
+.cartlinks a
+{
+    text-decoration: none;
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .3s;
+    text-transform: capitalize;
+    font-weight: bold;
+    color: black;
+}
+.cartlinks a:hover
+{
+    background-color: black;
+    color: white;
+}
+.cartpay
+{
+    width: 80%;
+    margin-left: 10%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+.cartpay .p-5
+{
+    padding: 5px !important;
+    
+}
+.cartpay .d-b
+{
+    display: block !important;
+}
+.cartpay input[type="text"]
+{
+    padding: 5px;
+    margin-right: 10px;
+    outline: none;
+}
+.cartpay .total
+{
+    width: 30%;
+    padding: 10px 30px;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding-bottom: 30px;
+    flex-direction: column !important;
+}
+.cartpay h4,span
+{
+    text-transform: capitalize;
+
+}
+.cartpay .total > div:not(.linkshow)
+{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.cartpay .linkshow
+{
+    text-align: center;
+    margin-top: 40px;
+}
+@media(max-width:1023px)
+{
+    .cartpay 
+    {
+        flex-direction: column;
+        row-gap: 30px;
+    }
+    .cartpay > div
+    {
+        width: 80% !important;
+      
+    }
+}
+@media(max-width:767px)
+{
+    .carttable input
+    {
+        width: 50%;
+    }
+    .cartpay > div
+    {
+        width: 99% !important;
+      
+    }
+}
+@media(max-width:424px)
+{
+    .cartpay,.carttable
+    {
+        width: 90%;
+        margin-left: 5%;
+    }
+    .carttable input
+    {
+        width: 70%;
+    }
+
+}
+@media(max-width:424px)
+{
+    .cartpay,.carttable
+    {
+        width: 99%;
+        margin-left: 1%;
+    }
+    .carttable input
+    {
+        width: 100%;
+    }
+    .cartpay input[type="text"]
+    {
+        margin-bottom: 20px;
+    }
+
+}

@@ -1,0 +1,204 @@
+.signup
+{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.signup .img
+{
+    width: 53%;
+}
+.signup .img img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.signup .form 
+{
+    /* background-color: #eee; */
+    width: 40%;
+    /* text-align: center; */
+}
+.signup .form  p
+{
+    margin-top: 10px;
+
+}
+.signup .form form 
+{
+    /* text-align: center; */
+    width: 100%;
+    /* background-color: red; */
+
+}
+.signup .form form input
+{
+    width: 70%;
+    outline: none;
+    display: block;
+    border: none;
+    border-bottom: 1px solid black;
+    padding: 5px;
+    /* color: #ddd; */
+    /* text-transform: capitalize; */
+    margin-top: 30px;
+
+}
+.signup .form form button
+{
+    width: 70%;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #db4444;
+    color: white;
+    text-align: center;
+    outline: none;
+    text-transform: capitalize;
+    margin-top: 30px;
+    border: 2px solid #db4444;
+    transition: .3s;
+    cursor: pointer;
+}
+.signup .form form button:hover
+{
+    color: #db4444;
+    background-color: white;
+}
+.signup .form >button
+{
+    display: flex;
+    padding: 5px;
+    width: 70%;
+    outline: none;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.signup .form >button:hover
+{
+    background-color: #db4444;
+    color: white;
+    border-color: #db4444;
+}
+.signup .form >button img
+{
+    width: 20px;
+    margin-right: 15px;
+    
+}
+.signup .form > p
+{
+    margin-top: 20px;
+    color: #9b9b9b;
+    margin-left: 20px;
+    font-size: 18px;
+}
+.signup .form > p a
+{
+    color: #6e6e6e;
+    cursor: pointer;
+    transition: .3s;
+    margin-left: 5px;
+}
+.signup .form > p a:hover
+{
+    color: black;
+}
+.signup .log
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 65%;
+}
+.signup .form form .log button,
+.signup .form form .log a
+{
+    width: 40%;
+}
+.signup .form form .log a
+{
+    cursor: pointer;
+    margin-top: 20px;
+    color: #db4444;
+    text-decoration: none;
+    transition: .3s;
+}
+.signup .form form .log a:hover
+{
+    color: #962c2c;
+}
+.changepass
+{
+    width: 80% !important;
+    margin-left: 10% !important;
+    align-items: center;
+    justify-content: center !important;
+    flex-direction: column !important;
+
+}
+.changepass .form form input,.changepass .form form
+{
+    width: 100% !important;
+}
+@media(max-width:1023px)
+{
+    .signup .log
+{
+    
+    width: 80%;
+}
+}
+@media(max-width:767px)
+{
+    .signup {
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    .signup .img,
+    .signup .form
+    {
+        width: 80%;
+        
+    }
+}
+@media(max-width:424px)
+{
+    .signup .img,
+    .signup .form
+    {
+        width: 90%;
+        
+    }
+    .signup .form p,
+    .signup .form form button,
+    .signup .form > button,
+    .signup .form form input 
+    {
+        font-size: 14px;
+    }
+    .signup .form h1
+    {
+        font-size: 22px;
+    }
+}
+@media(max-width:374px)
+{
+    .signup .img,
+    .signup .form
+    {
+        width: 98%;
+        
+    }
+   
+    .signup .form h1
+    {
+        font-size: 20px;
+    }
+}

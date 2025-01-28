@@ -1,0 +1,147 @@
+.footercont
+{
+   
+    background-color: black;
+    color: white;
+    padding-bottom: 20px;
+    margin-top: 40px;
+    padding-top: 20px;
+}
+.divs
+{
+    width: 95%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(5,20%);
+    justify-content: space-between;
+}
+.divs h1
+{
+    font-size: 22px;
+    text-align: center;
+}
+.divs p,
+.divs h3
+{
+   
+    text-align: center;
+    margin-top: 20px;
+    line-height: 28px;
+    font-weight: normal;
+}
+.divs .email1
+{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    background-color: black;
+    color: #ddd;
+    border: 2px solid white;
+    padding: 5px;
+    border-radius: 5px;
+    justify-content: space-between;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 20px;
+
+}
+.divs .div1 img
+{
+    width: 80%;
+    margin: 0 0 20px 10%;
+}
+.divs .div1:nth-child(2) p
+{
+    width: 75%;
+    margin-left: 13%;
+}
+.divs .div1:nth-child(5) .links
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    width: 60%;
+    margin: auto;
+}
+.divs .div1:nth-child(5) .links i
+{
+    cursor: pointer;
+    transition: .3s;
+
+}
+.divs .div1:nth-child(5) .links i:hover
+{
+    color: #ddd;
+}
+.divs .email1 input
+{
+    outline: none;
+    border: none;
+    background: none;
+    width: 80%;
+}
+.divs .email1 i
+{
+    color: white;
+    font-size: 20px;
+
+}
+.divs a
+{
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    text-decoration: none;
+    color: white;
+}
+.footercont .copy
+{
+    text-align: center;
+    margin-top: 35px;
+    color: #d3d3d3;
+
+}
+@media(max-width:1044px)
+{
+    .divs {
+        grid-template-columns: repeat(3,32%);
+        justify-content: space-between;
+    }
+}
+@media(max-width:786px)
+{
+    .divs {
+        grid-template-columns: 45% 45%;
+        align-items: center;
+        row-gap: 30px;
+    }
+    .divs h1
+    {
+        font-size: 18px;
+    }
+    .divs p{
+        font-size: 14px;
+       
+    }
+    .divs .div1:nth-child(2) p
+    {
+         width: 100%;
+         margin-left: 0;
+    }
+    .divs a
+    {
+        margin-top: 10px;
+    }
+}
+@media(max-width:374px)
+{
+    .divs {
+        grid-template-columns: 80%;
+       margin: auto
+    }
+    .divs h1
+    {
+        font-size: 16px;
+    }
+}

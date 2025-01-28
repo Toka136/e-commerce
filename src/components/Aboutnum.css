@@ -1,0 +1,55 @@
+.box
+{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border: 2px solid #919db6;
+    transition: .3s;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.box:hover
+{
+    background-color: #db4444;
+}
+.box:hover i
+{
+    background-color: #e67c7c;
+    color: white;
+}
+.box:hover span,
+.box:hover p
+{
+    color: white;
+}
+.box i
+{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ddd;
+    color: black;
+    font-size: 20px;
+}
+.box span:nth-child(2)
+{
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+@media(max-width:424px)
+{
+    .box span:nth-child(2),
+    .box i
+    {
+        font-size: 16px;
+    }
+    .box p
+    {
+        font-size: 14px;
+    }
+}

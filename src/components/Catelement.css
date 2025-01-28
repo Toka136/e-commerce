@@ -1,0 +1,50 @@
+.catprod
+{
+    padding: 15px;
+    border: 1px solid #ddd;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: .3s;
+    cursor: pointer;
+    width: 70%;
+    margin-bottom: 20px;
+    margin-top: 30px;
+    text-decoration: none;
+    color: black;
+}
+.catprod:hover
+{
+    background-color: #db4444;
+}
+.catprod:hover i,
+.catprod:hover p
+{
+    color: white;
+}
+.catprod i
+{
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+.catprod p
+{
+    font-size: 18px;
+    text-transform: capitalize;
+}
+.bestsales
+{
+    display: flex !important;
+    justify-content: space-between !important;
+    width: 90%;
+    align-items: center;
+    margin-bottom: 20px !important;
+}
+@media(max-width:767px)
+{
+    .catprod
+    {
+        width: 70%;
+    }
+}

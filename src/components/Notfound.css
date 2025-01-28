@@ -1,0 +1,20 @@
+.linksnotfound
+{
+    margin: 40px 0 0 10px;
+}
+.linksnotfound span:nth-child(1)
+{
+    color: #dfdfdf;
+}
+.ps p
+{
+    text-align: center;
+    margin-top: 20px;
+    
+}
+.error
+{
+    font-size: 40px;
+    font-weight: 700;
+    text-transform: capitalize;
+}

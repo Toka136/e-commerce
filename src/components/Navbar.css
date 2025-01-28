@@ -1,0 +1,170 @@
+header
+{
+    display: grid;
+    grid-template-columns: 15% 60% 20%;
+    width: 90%;
+    justify-content: space-between;
+    margin-left: 5%;
+    align-items: center;
+    margin-bottom: 41px;
+}
+.logo
+{
+    text-align: start;
+}
+.bg-body-tertiary
+{
+    background: none !important;
+}
+.person
+{
+    text-align: end;
+}
+.form-control
+{
+    border: none !important;
+    outline: none !important;
+    width: 100%;
+    background: none !important;
+    text-wrap: wrap;
+    text-overflow: ellipsis;
+}
+.navbar
+{
+    background: none !important;
+}
+.d-flex
+{
+    border-radius: var(--bs-border-radius);
+   background-color: #f5f5ff;
+   width: 50% !important;
+
+}
+.navbar-nav
+{
+    width: 50%;
+}
+.no-color
+{
+    background: none !important;
+    background-color: transparent !important;
+}
+.icons_person
+{
+    display: flex ;
+    justify-content: space-between;
+    align-items: center;
+}
+.icons_person a
+{
+    color: black !important;
+}
+.person_btn
+{
+    width: 30px;
+    height: 30px;
+    border-radius: 50% !important;
+    background-color: white !important;
+    border: 1px solid black !important;
+    padding: 5px;
+    cursor: pointer;
+    transition: .3s;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+}
+.dropdown-toggle::after
+{
+    content: none !important;
+}
+.person_btn i
+{
+    color: black;
+}
+.person_btn:hover
+{
+    background-color: #db4444 !important;
+    border-color: transparent !important;
+}
+.person_btn:hover i
+{
+    color: white;
+}
+.dropdown-menu
+{
+    background: linear-gradient(90deg,#825e86,#645c64);
+}
+.dropdown-menu .dropdown-item 
+{
+    display: flex !important;
+    /* align-items: center !important; */
+    /* justify-content: space-between !important; */
+    padding: 5px;
+}
+.dropdown-menu .dropdown-item i
+{
+    font-size: 20px !important;
+    margin:5px  10px 0 0;
+    color: white;
+}
+.dropdown-menu .dropdown-item p
+{
+    color: white;
+}
+.dropdown-menu .dropdown-item a
+{
+    color: white !important;
+    text-decoration: none;
+}
+.dropdown-item:hover
+{
+    color: transparent !important;
+    background-color: transparent !important;
+}
+
+
+@media (max-width:1023px)
+{
+    header
+    {
+        grid-template-columns: 30% 70%;
+        row-gap: 10px;
+        justify-content: space-between;
+        /* align-items: center; */
+    }
+    .logo
+    {
+        margin-top: 20px;
+    }
+    .container-fluid
+    {
+        text-align: end !important;
+        justify-content: end !important;
+
+    }
+    .person
+    {
+        text-align: start;
+    }
+    .d-flex
+    {
+        width: 60% !important;
+        margin: auto;
+    }
+}
+@media (max-width:767px)
+{
+    .logo
+    {
+        z-index: 3;
+    }
+    header
+    {
+        grid-template-columns: 30% 70%;
+    }
+    .d-flex
+    {
+        width: 100% !important;
+        margin: auto;
+    }
+}
